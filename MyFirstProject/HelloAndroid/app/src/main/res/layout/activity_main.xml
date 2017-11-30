@@ -1,18 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.udacity.project.helloandroid.MainActivity">
+    tools:context="com.udacity.project.helloandroid.MainActivity"
+    android:background="@android:color/black">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/udacity"
+        android:layout_above="@+id/location"/>
+
+    <TextView
+        android:id="@+id/TV1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="cursive"
+        android:text="Join a class"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_alignEnd="@+id/TV1"
+        android:layout_alignRight="@+id/TV1"
+        android:layout_below="@+id/TV1"
+        android:fontFamily="cursive"
+        android:text="today !"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
 
-</android.support.constraint.ConstraintLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="230dp"
+        android:layout_marginLeft="230dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/image">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/call" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="650-555-5555"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+
+
+
+        <ImageView
+            android:id="@+id/location"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/location"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="25dp"
+            />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:text="2465 Latham St"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:layout_alignBottom="@+id/location"
+            android:layout_marginLeft="25dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Mountain View, CA 94043"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:layout_below="@+id/address"
+            android:layout_alignStart="@+id/address"
+            android:layout_alignLeft="@+id/address"/>
+
+    <LinearLayout
+        android:layout_width="240dp"
+        android:layout_height="70dp"
+        android:layout_above="@+id/location"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/logo"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Udacity"
+            android:fontFamily="casual"
+            android:textSize="45sp"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+</RelativeLayout>
