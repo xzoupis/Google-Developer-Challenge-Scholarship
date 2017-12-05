@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
                 scoreB += 200;
                 break;
             default:
-                throw new RuntimeException("Unknow button ID");
+                throw new RuntimeException("Unknown button ID");
         }
         displayScore(scoreA,scoreB);
     }
@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
                 scoreB -= 200;
                 break;
             default:
-                throw new RuntimeException("Unknow button ID");
+                throw new RuntimeException("Unknown button ID");
         }
         displayScore(scoreA,scoreB);
     }
@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
                 scoreB -= 100;
                 break;
             default:
-                throw new RuntimeException("Unknow button ID");
+                throw new RuntimeException("Unknown button ID");
         }
         displayScore(scoreA,scoreB);
     }
@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
                 pointsA -= 5;
                 break;
             default:
-                throw new RuntimeException("Unknow button ID");
+                throw new RuntimeException("Unknown button ID");
         }
         displayPoints(pointsA,pointsB);
     }
@@ -117,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
                 pointsA += 5;
                 break;
             default:
-                throw new RuntimeException("Unknow button ID");
+                throw new RuntimeException("Unknown button ID");
         }
 
         displayPoints(pointsA,pointsB);
@@ -135,6 +135,16 @@ public class MainActivity extends AppCompatActivity {
         pointsA = 50;
         pointsB = 50;
         displayPoints(pointsA,pointsB);
+    }
+
+    /**
+     * This method is called when a reset button is clicked.
+     */
+    public void Reset(View view) {
+        scoreA = 0;
+        scoreB = 0;
+        displayScore(scoreA,scoreB);
+
     }
 
     /**
