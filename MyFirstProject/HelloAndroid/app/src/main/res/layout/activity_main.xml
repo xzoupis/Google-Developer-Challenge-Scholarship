@@ -9,35 +9,24 @@
 
     <ImageView
         android:id="@+id/image"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:scaleType="centerCrop"
+        style="@style/imageView"
         android:src="@drawable/udacity"
         android:layout_above="@+id/location"/>
 
     <TextView
         android:id="@+id/TV1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:fontFamily="cursive"
-        android:text="Join a class"
-        android:textColor="@android:color/white"
-        android:textSize="30sp" />
+        style="@style/titleView"
+        android:layout_marginTop="@dimen/textMarginTop"
+        android:text="@string/moto1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/titleMarginRight"/>
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_alignEnd="@+id/TV1"
+        style="@style/titleView"
         android:layout_alignRight="@+id/TV1"
         android:layout_below="@+id/TV1"
-        android:fontFamily="cursive"
-        android:text="today !"
-        android:textColor="@android:color/white"
-        android:textSize="30sp" />
+        android:text="@string/moto2" />
 
 
 
@@ -48,61 +37,59 @@
         android:layout_marginStart="230dp"
         android:layout_marginLeft="230dp"
         android:layout_marginBottom="5dp"
-        android:layout_below="@+id/image">
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/image"
+        android:id="@+id/linearLayout">
 
         <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            style="@style/icons"
+            android:layout_alignLeft="@+id/linearLayout"
+            android:layout_alignStart="@+id/linearLayout"
+            android:layout_alignTop="@+id/linearLayout"
             android:src="@drawable/call" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/textView"
             android:layout_marginLeft="10dp"
-            android:fontFamily="sans-serif-condensed"
-            android:text="650-555-5555"
-            android:textSize="15sp"
-            android:textColor="@android:color/white"/>
+            android:text="@string/phone_number"
+            android:clickable="true"
+            android:autoLink= "phone"/>
     </LinearLayout>
 
 
 
         <ImageView
             android:id="@+id/location"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            style="@style/icons"
             android:src="@drawable/location"
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="25dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
             />
 
         <TextView
             android:id="@+id/address"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-condensed"
-            android:text="2465 Latham St"
-            android:textSize="15sp"
-            android:textColor="@android:color/white"
+            style="@style/textView"
+            android:text="@string/address1"
             android:layout_alignBottom="@+id/location"
-            android:layout_marginLeft="25dp"/>
+            android:layout_marginLeft="35dp"
+            android:clickable="true"
+            android:autoLink= "map"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-condensed"
-            android:text="Mountain View, CA 94043"
-            android:textSize="15sp"
-            android:textColor="@android:color/white"
-            android:layout_below="@+id/address"
-            android:layout_alignStart="@+id/address"
-            android:layout_alignLeft="@+id/address"/>
+    <TextView
+        style="@style/textView"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/location"
+        android:layout_toRightOf="@+id/location"
+        android:text="@string/address2"/>
 
     <LinearLayout
         android:layout_width="240dp"
         android:layout_height="70dp"
         android:layout_above="@+id/location"
-        android:layout_centerInParent="true">
+        android:layout_centerInParent="true"
+        >
 
         <ImageView
             android:id="@+id/logo"
@@ -112,12 +99,9 @@
             android:layout_centerInParent="true"/>
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Udacity"
+            style="@style/titleView"
+            android:text="@string/company_name"
             android:fontFamily="casual"
-            android:textSize="45sp"
-            android:textColor="@android:color/white"
             android:layout_marginLeft="10dp"/>
 
     </LinearLayout>
