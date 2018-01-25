@@ -8,4 +8,25 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="WinButtons">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/positiveTextColor</item>
+        <item name="android:layout_marginTop">@dimen/ButtonsMarginTop</item>
+    </style>
+
+    <style name="LoseButtons">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/negativeTextColor</item>
+        <item name="android:layout_marginTop">@dimen/ButtonsMarginTop</item>
+    </style>
+
+    <style name="Decrease">
+        <item name="android:layout_width">@dimen/DIButtonWidth</item>
+        <item name="android:layout_height">@dimen/DIButtonLength</item>
+        <item name="android:onClick">@string/decrease</item>
+        <item name="android:text">@string/decreaseSymbol</item>
+    </style>
+
 </resources>

@@ -88,40 +88,43 @@ public class MainActivity extends AppCompatActivity {
      * This method is called when the + button is clicked.
      */
     public void increase(View view) {
-        switch (view.getId()) {
-            case R.id.increaseA:
-                pointsA += 5;
-                pointsB -= 5;
-                break;
-            case R.id.increaseB:
-                pointsB += 5;
-                pointsA -= 5;
-                break;
-            default:
-                throw new RuntimeException("Unknown button ID");
+        if (pointsB < 125 && pointsB > -25) {
+            switch (view.getId()) {
+                case R.id.increaseA:
+                    pointsA += 5;
+                    pointsB -= 5;
+                    break;
+                case R.id.increaseB:
+                    pointsB += 5;
+                    pointsA -= 5;
+                    break;
+                default:
+                    throw new RuntimeException("Unknown button ID");
+            }
+            displayPoints(pointsA, pointsB);
         }
-        displayPoints(pointsA,pointsB);
     }
 
     /**
      * This method is called when the - button is clicked.
      */
     public void decrease(View view) {
-        switch (view.getId()) {
-            case R.id.decreaseA:
-                pointsA -= 5;
-                pointsB += 5;
-                break;
-            case R.id.decreaseB:
-                pointsB -= 5;
-                pointsA += 5;
-                break;
-            default:
-                throw new RuntimeException("Unknown button ID");
+        if (pointsA < 125 && pointsA > -25) {
+            switch (view.getId()) {
+                case R.id.decreaseA:
+                    pointsA -= 5;
+                    pointsB += 5;
+                    break;
+                case R.id.decreaseB:
+                    pointsB -= 5;
+                    pointsA += 5;
+                    break;
+                default:
+                    throw new RuntimeException("Unknown button ID");
+            }
+
+            displayPoints(pointsA, pointsB);
         }
-
-        displayPoints(pointsA,pointsB);
-
     }
 
     /**

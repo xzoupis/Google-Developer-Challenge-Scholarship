@@ -71,29 +71,21 @@
 
         <Button
             android:id="@+id/BothWinA"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="1-2"
-            android:onClick="BothWin"
-            android:background="@android:color/holo_green_dark"/>
+            style="@style/WinButtons"
+            android:text="@string/onetwo"
+            android:onClick="BothWin"/>
 
         <Button
             android:id="@+id/LargeTichuA"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Large \nTichu"
-            android:layout_marginTop="5dp"
-            android:onClick="LargeTichu"
-            android:background="@android:color/holo_green_dark"/>
+            style="@style/WinButtons"
+            android:text="@string/LargeTichu"
+            android:onClick="LargeTichu"/>
 
         <Button
             android:id="@+id/TichuA"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Tichu"
-            android:layout_marginTop="5dp"
-            android:onClick="Tichu"
-            android:background="@android:color/holo_green_dark"/>
+            style="@style/WinButtons"
+            android:text="@string/Tichu"
+            android:onClick="Tichu"/>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -102,14 +94,11 @@
 
             <Button
                 android:id="@+id/decreaseA"
-                android:layout_width="38dp"
-                android:layout_height="58dp"
-                android:onClick="decrease"
-                android:text="-"/>
+                style="@style/Decrease"/>
 
             <TextView
                 android:id="@+id/pointsA"
-                android:layout_width="30dp"
+                android:layout_width="35dp"
                 android:layout_height="48dp"
                 android:text="50"
                 android:textSize="20sp"
@@ -128,21 +117,15 @@
 
         <Button
             android:id="@+id/NoTichuA"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Tichu"
-            android:layout_marginTop="5dp"
-            android:onClick="Tichu"
-            android:background="@android:color/holo_red_dark"/>
+            style="@style/LoseButtons"
+            android:text="@string/Tichu"
+            android:onClick="Tichu"/>
 
         <Button
             android:id="@+id/NoLargeTichuA"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Large \nTichu"
-            android:layout_marginTop="5dp"
-            android:onClick="LargeTichu"
-            android:background="@android:color/holo_red_dark"/>
+            style="@style/LoseButtons"
+            android:text="@string/LargeTichu"
+            android:onClick="LargeTichu"/>
 
 
     </LinearLayout>
@@ -154,7 +137,7 @@
         android:layout_height="50dp"
         android:text="Add\nPts"
         android:textSize="10sp"
-        android:layout_marginLeft="170dp"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="265dp"
         android:onClick="AddPoints"/>
 
@@ -171,29 +154,21 @@
 
         <Button
             android:id="@+id/BothWinB"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="1-2"
-            android:onClick="BothWin"
-            android:background="@android:color/holo_green_dark"/>
+            style="@style/WinButtons"
+            android:text="@string/onetwo"
+            android:onClick="BothWin"/>
 
         <Button
             android:id="@+id/LargeTichuB"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Large \nTichu"
-            android:layout_marginTop="5dp"
-            android:onClick="LargeTichu"
-            android:background="@android:color/holo_green_dark"/>
+            style="@style/WinButtons"
+            android:text="@string/LargeTichu"
+            android:onClick="LargeTichu"/>
 
         <Button
             android:id="@+id/TichuB"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Tichu"
-            android:layout_marginTop="5dp"
-            android:onClick="Tichu"
-            android:background="@android:color/holo_green_dark"/>
+            style="@style/WinButtons"
+            android:text="@string/Tichu"
+            android:onClick="Tichu"/>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -202,15 +177,11 @@
 
             <Button
                 android:id="@+id/decreaseB"
-                android:layout_width="38dp"
-                android:layout_height="58dp"
-                android:onClick="decrease"
-                android:text="-"
-                />
+                style="@style/Decrease"/>
 
             <TextView
                 android:id="@+id/pointsB"
-                android:layout_width="30dp"
+                android:layout_width="35dp"
                 android:layout_height="48dp"
                 android:text="50"
                 android:textSize="20sp"
@@ -229,21 +200,15 @@
 
         <Button
             android:id="@+id/NoTichuB"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Tichu"
-            android:layout_marginTop="5dp"
-            android:onClick="Tichu"
-            android:background="@android:color/holo_red_dark"/>
+            style="@style/LoseButtons"
+            android:text="@string/Tichu"
+            android:onClick="Tichu"/>
 
         <Button
             android:id="@+id/NoLargeTichuB"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Large \nTichu"
-            android:layout_marginTop="5dp"
-            android:onClick="LargeTichu"
-            android:background="@android:color/holo_red_dark"/>
+            style="@style/LoseButtons"
+            android:text="@string/LargeTichu"
+            android:onClick="LargeTichu"/>
 
     </LinearLayout>
 

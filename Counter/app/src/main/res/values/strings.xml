@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Tichu Counter</string>
+    <string name="onetwo">1-2</string>
+    <string name="LargeTichu">Large \nTichu</string>
+    <string name="Tichu">Tichu</string>
+    <string name="decreaseSymbol">-</string>
+    <string name="increaseSymbol">+</string>
+    <string name="decrease">decrease</string>
+    <string name="increase">increase</string>
 </resources>
